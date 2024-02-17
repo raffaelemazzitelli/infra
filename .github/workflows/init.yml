@@ -5,7 +5,7 @@ on:
 
 permissions:
   pull-requests: write
-  
+
 jobs:
   create_pull_request:
     runs-on: ubuntu-latest
@@ -20,7 +20,7 @@ jobs:
           PR_DATA=$(jq -n \
                     --arg title "Automated Pull Request" \
                     --arg body "This is an automated pull request." \
-                    --arg head "feature-branch" \
+                    --arg head "test1" \
                     --arg base "main" \
                     '{title: $title, body: $body, head: $head, base: $base}')
           curl \
