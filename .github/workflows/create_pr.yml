@@ -20,7 +20,7 @@ jobs:
           PR_DATA=$(jq -n \
                     --arg title "Automated Pull Request DO NOT DO THIS AT HOME" \
                     --arg body "This is an automated pull request." \
-                    --arg head "test1" \
+                    --arg head "do-not-do-this-at-home" \
                     --arg base "main" \
                     '{title: $title, body: $body, head: $head, base: $base}')
           curl \
