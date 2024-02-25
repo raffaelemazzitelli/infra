@@ -2,7 +2,6 @@ name: Create Pull Request via GitHub API
 
 on:
   push:
-    - do-not-do-this-at-home
 
 permissions:
   pull-requests: write
